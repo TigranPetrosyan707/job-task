@@ -1,0 +1,74 @@
+.theaterPlayContainer {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: #1a2238;
+  border-radius: 15px;
+  margin-top: 50px;
+  transition: 0.7s;
+}
+
+.theaterPlayContainer:hover {
+  height: 300px;
+}
+
+.theaterPlayContainer p {
+  font-family: "Nerko One", cursive;
+  color: rgb(87, 135, 170);
+  font-weight: bold;
+}
+
+.theaterPlayContainer .img-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10%;
+  width: 150px;
+  height: 150px;
+  background: lightcoral;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.theaterPlayContainer:hover .img-box {
+  width: 100%;
+  height: 300px;
+}
+
+.theaterPlayContainer .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.theaterPlayContainer .content-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.content-box span {
+  color: #ff6a3d;
+}
+
+.content-info {
+  display: flex;
+}
+
+.content-button button {
+  background-color: #ff6a3d;
+  font-family: "Nerko One", cursive;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #1a2238;
+}

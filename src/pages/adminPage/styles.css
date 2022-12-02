@@ -1,0 +1,29 @@
+.adminPageContainer header {
+  display: flex;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #1a2238;
+  gap: 20px;
+}
+
+.adminPageContainer a {
+  text-decoration: none;
+  font-family: "Nerko One", cursive;
+  color: #ff6a3d;
+  font-size: 20px;
+}
+
+.adminPageContainer table {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 8px 8px;
+  background-color: #ff6a3d;
+  color: #1a2238;
+  overflow: hidden;
+}

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addUserName } from "./redux/userSlice";
+import UserPage from "./pages/userPage";
+import UserPlays from "./pages/userPlays";
+import UserBookings from "./pages/userBookings";
+import AdminPage from "./pages/adminPage";
+import "./App.css";
 
 function App() {
+  const dispatch = useDispatch();
+  const userName = prompt(`Please enter your name  \uD83D\uDE00`);
+  dispatch(addUserName(userName));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<UserPage />}>
+        <Route path="plays" index element={<UserPlays />} />
+        <Route path="bookings" element={<UserBookings />} />
+      </Route>
+      <Route path="admin" element={<AdminPage />} />
+    </Routes>
   );
 }
 

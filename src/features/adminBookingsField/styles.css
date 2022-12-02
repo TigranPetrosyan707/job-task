@@ -1,0 +1,18 @@
+.approveButton {
+  background-color: #bcfd4c;
+  font-family: "Nerko One", cursive;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.rejectButton {
+  background-color: red;
+  font-family: "Nerko One", cursive;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}

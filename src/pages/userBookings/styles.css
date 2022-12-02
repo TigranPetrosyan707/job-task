@@ -1,0 +1,43 @@
+.bookingsSection h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 65px);
+  font-family: "Nerko One", cursive;
+  font-size: 30px;
+  background-color: #1a2238;
+  color: #ff6a3d;
+  border-top: 1px solid white;
+}
+
+.bookingsSection table {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 8px 8px;
+  background-color: #ff6a3d;
+  color: #1a2238;
+  overflow: hidden;
+}
+
+th {
+  background-color: #1a2238;
+  font-size: 20px;
+  color: #ff6a3d;
+}
+
+th,
+td {
+  font-family: "Nerko One", cursive;
+  padding: 18px 18px;
+}
+
+tr:nth-child(even) {
+  background-color: #1a2238;
+  color: #ff6a3d;
+}
